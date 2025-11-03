@@ -1,0 +1,471 @@
+Isayu
+isayu1571
+閒置
+
+這就是 #期中 頻道的起點。 
+えりん
+ 剛剛滑入了伺服器中。 — 2025/10/17 上午 11:41
+
+揮手打招呼！
+Isayu — 2025/10/19 下午 05:57
+Figma https://www.figma.com/design/akJ370Y8TcbHtYU23BHJVj/Untitled?node-id=0-1&p=f&t=qcFHWVNR80W0TTgk-0
+Figma
+Untitled
+Created with Figma
+圖片
+Canva https://www.canva.com/design/DAG2N-p8IpQ/UkoRtxw6XisBPKSlR6D6sQ/edit?utm_content=DAG2N-p8IpQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+えりん — 2025/10/21 下午 07:04
+icon圖檔(我直接調成紅色ㄉㄌ比較方便丟上去🫰🏻
+圖片
+圖片
+圖片
+Isayu — 2025/10/21 下午 08:48
+好
+Isayu — 2025/10/22 下午 03:59
+寶
+CSS: font-family: Konkhmer Sleokchher; 
+HTML:<!--header字體-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap" rel="stylesheet"> 
+字體改成這個 我去google font找的 因為原本的沒有
+Isayu — 2025/10/22 下午 04:01
+放在html那邊最上面
+えりん — 2025/10/22 下午 05:43
+我有弄出來ㄟ
+<link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap" rel="stylesheet">
+我貼這行字體有跑出來 我叫chatgpt給我ㄉ
+你要試試看ㄇ
+Isayu — 2025/10/22 下午 08:24
+我們先按照原本的 然後來看看效果
+然後再比較一下
+Isayu — 2025/10/22 下午 09:29
+假如要幫做第4頁的話
+要做12個圖 12個介紹喔
+阿做不完的跟我說
+我做
+えりん — 2025/10/22 下午 09:32
+ㄡ虧弄不完再跟你求救
+Isayu — 2025/10/23 上午 11:25
+我的nav bar  跟 footer 你想先拿還是 禮拜二再給
+えりん — 2025/10/23 上午 11:57
+你先丟好ㄌ
+Isayu — 2025/10/24 下午 04:36
+<!--header-->
+    <header>
+    <img src="icon/yoa.png" class="icon" alt="Yoasobi Logo">
+        <nav>
+            <ul class="nav-list">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Music</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Member</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" id="login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #312C2C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    box-sizing: border-box; 
+
+    padding: 0 30px;
+    z-index: 1050;
+}
+
+.icon {
+    width: 117px;
+    height: 34px;
+}
+/nav bar/
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-left: 30px;
+}
+
+.nav-link {
+    color: #F2285A;
+    text-decoration: none;
+    font-family: "BBH Sans Hegarty", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #FFFFFF;
+}
+
+#login {
+    color: #FFFFFF;
+    background-color: #F2285A;
+    display: inline-block;
+    text-align: center;
+    width: 105px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 6px; 
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#login:hover {
+    background-color: #ffffff;
+    color: #F2285A;
+} 
+-------------------------------------------
+<!--Footer-->
+    <footer>
+        <p class = "word" >Made by Isayu and Elaine</p>
+        <div class = "link">
+            <a href="https://www.instagram.com/yoasobi_staff_/" target="_blank">
+                <img src="icon/IG.png" alt="ig" class="ig">
+            </a>
+
+            <a href="https://x.com/yoasobi_staff" target="_blank">
+                <img src="icon/TWITTER.png" alt="twitter" class="twitter">
+            </a>
+
+            <a href="https://www.youtube.com/channel/UCvpredjG93ifbCP1Y77JyFA" target="_blank">
+                <img src="icon/YT.png" alt="yt" class="yt">
+            </a>
+        </div>
+
+    </footer>
+/Footer/
+footer {
+  margin-top: 161px;
+  width: 100%;
+  height: 80px;
+  background-color: #312C2C;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 0 20px;
+}
+
+.word{
+  width: 397px;
+  height: 38px;
+  opacity: 1;
+  padding-top: 22px;
+  padding-left: 33px;
+  font-family: "Konkhmer Sleokchher";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color:#F2285A;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+}
+
+.link img {
+  width: 80px;
+  height: 80px;
+}
+margin的高度你在自己喬一下
+えりん — 2025/10/28 下午 03:05
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+展開
+message.txt
+6 KB
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+展開
+MUSIC.html
+6 KB
+html {
+    background-color: #FFFFFF;
+}
+
+body {
+    font-family: 'Konkhmer Sleokchher', sans-serif;
+展開
+MUSIC.css
+3 KB
+えりん — 2025/10/28 下午 03:12
+圖片
+圖片
+圖片
+圖片
+圖片
+圖片
+圖片
+圖片
+圖片
+圖片
+圖片
+圖片
+えりん — 2025/10/28 下午 03:48
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+展開
+MEMBER.html
+4 KB
+html {
+    background-color: #FFFFFF;
+}
+
+body {
+    font-family: 'Konkhmer Sleokchher', sans-serif;
+展開
+MEMBER.css
+4 KB
+圖片
+圖片
+圖片
+Isayu — 2025/10/28 下午 04:12
+圖片
+圖片
+圖片
+えりん — 2025/10/28 下午 04:17
+圖片
+圖片
+圖片
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+展開
+MUSIC5.html
+2 KB
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+展開
+MUSIC6.html
+2 KB
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+展開
+MUSIC7.html
+2 KB
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+展開
+MUSIC8.html
+3 KB
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+展開
+MUSIC9.html
+3 KB
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+展開
+MUSIC10.html
+2 KB
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+展開
+MUSIC1.html
+3 KB
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+展開
+MUSIC2.html
+3 KB
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+展開
+MUSIC3.html
+2 KB
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+展開
+MUSIC4.html
+2 KB
+html {
+    background-color: #FFFFFF;
+}
+
+body {
+    font-family: 'Konkhmer Sleokchher', sans-serif;
+展開
+SONG.css
+3 KB
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+展開
+MUSIC11.html
+3 KB
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+展開
+MUSIC12.html
+2 KB
+えりん — 2025/10/28 下午 04:31
+圖片
+圖片
+圖片
+圖片
+圖片
+圖片
+圖片
+圖片
+圖片
+圖片
+圖片
+圖片
+Isayu — 2025/10/28 下午 04:39
+ハルジオン
+もう少しだけ
+ラブレター
+えりん — 2025/10/28 下午 04:44
+圖片
+えりん — 2025/10/28 下午 04:51
+圖片
+圖片
+えりん — 2025/10/28 下午 05:00
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+font-family: "M PLUS Rounded 1c", sans-serif;
+えりん — 2025/10/28 下午 05:14
+圖片
+圖片
+えりん — 2025/10/28 下午 05:28
+圖片
+Isayu — 2025/10/28 下午 05:29
+太好啦 那就這樣 剩下我在搞
+今天先這樣吧
+差不多都結束了
+Canva 我在搞
+耶耶
+えりん — 2025/10/28 下午 05:32
+好ㄡ好ㄡ那我先走ㄌㄡ🫶🏻
+﻿
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>群青</title>
+    <link rel="stylesheet" href="SONG.css">
+    <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--HEADER-->
+  <header>
+    <img src="icon/yoa.png" class="icon" alt="Yoasobi Logo">
+    <nav>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="page1.html" class="nav-link">HOME</a></li>
+                <li class="nav-item"><a href="page2.html" class="nav-link">MUSIC</a></li>
+                <li class="nav-item"><a href="page3.html" class="nav-link">MEMBER</a></li>
+                <li class="nav-item"><a href="page5.html" class="nav-link" id="login">LOGIN</a></li>
+            </ul>
+    </nav>
+  </header>
+    <!--BODY-->
+    <main>
+        <div>群青</div>
+        <hr>
+        <a href="http://youtube.com/watch?v=Y4nEEZwckuU&list=RDY4nEEZwckuU&start_radio=1">
+            <img src="songimg/song5.jpg" alt="群青">
+        </a>
+        <p>改編自乙月ななの小說《群青》，<br>
+            以學生視角探討夢想與現實的衝突。歌曲旋律悠揚且富有張力，<br>
+            歌詞充滿哲理感，呈現青春奮鬥與努力的情感。</p>
+    </main>
+
+    <!--FOOTER-->
+ <footer>
+        <p class = "word" >Made by Isayu and Elaine</p>
+        <div class = "link">
+            <a href="https://www.instagram.com/yoasobi_staff_/" target="_blank">
+                <img src="icon/IG.png" alt="ig" class="ig">
+            </a>
+
+            <a href="https://x.com/yoasobi_staff" target="_blank">
+                <img src="icon/TWITTER.png" alt="twitter" class="twitter">
+            </a>
+
+            <a href="https://www.youtube.com/channel/UCvpredjG93ifbCP1Y77JyFA" target="_blank">
+                <img src="icon/YT.png" alt="yt" class="yt">
+            </a>
+        </div>
+
+    </footer>
+</body>
+
+</html>
